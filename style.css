@@ -1,0 +1,133 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: red;
+  font-family: sans-serif;
+}
+.top-nav-bar{
+height:57px;
+top:0;
+position:sticky;
+background: black;
+margin-bottom:20px;
+border-bottom:3px solid red;
+z-index: 2;
+}
+.logo{
+height:40px;
+margin: 5px 10px;
+}
+.form-control{
+margin-top:9px;
+margin-left: 30px;
+border: solid black;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+border-top-right-radius: 0;
+border-bottom-right-radius: 0;
+box-shadow: none;
+}
+.input-group-text{
+background: #ff5566;
+border: 1px solid black;
+margin: 8.5px 10px 3px 0;
+border-top-left-radius: 0x;
+border-bottom-left-radius: 0;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.search-box{
+display: inline-flex;
+width: 60%;
+}
+
+.menu-bar{
+    width:40%;
+    height:57px;
+    float:right;
+}
+.menu-bar ul{
+    inline-flex;
+    float:right;
+}
+
+.menu-bar ul li{
+    border-left:1px solid white;
+    list-style-type:none;
+    padding:15px 40px ;
+    text-align:center;
+    background-color: grey;
+    cursor:pointer;
+    display:inline;
+}
+@media only screen and (max-width:980px)
+.top-navbar{
+    height:118px;
+    border-bottom:0;
+}
+.search-box{
+width:100%;    
+}
+.menu-bar{
+    width:100%;
+}
+.menu-bar ul{
+    margin:10px 0;
+    width:100%;
+}
+.menu-bar ul li{
+    height:57px;
+    width:100%;
+}
+.side-menu{
+ height:79%;
+ width:15%;
+ font-size:14px;
+ float:left;
+ z-index:2;
+ background-color: red;
+}
+.side-menu ul{
+    margin-left:10px;
+}
+.side-menu ul li{
+    list-style-type:none;
+    font-weight:bold;
+    margin-top:10px;
+    cursor:pointer;
+}
+.side-menu ul li:hover{
+    color:white;
+}
+.side-menu ul li ul{
+    display:none;
+    z-index:10;
+    top:77px;
+}
+.side-menu ul li:hover ul{
+    display:block;
+    height:400px;
+    margin-left:14%;
+    padding: 0 100px 10px 10px;
+    position:fixed;
+    background:grey;
+    box-shadow:1px 1px 4px 1px rgba(0,0,0,0,0.5);
+}
+@media only screen and (max-width:980px)
+.side-menu{
+ width:34%;  
+ z-index:20;
+ top: 133px
+ position:fixed;
+ display:none;
+}
+.side-menu ul li ul{
+    top:133px;
+}
+.side-menu ul li:hover ul{
+    margin-left:30%;
+}
+
